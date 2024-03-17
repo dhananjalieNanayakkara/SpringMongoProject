@@ -22,8 +22,8 @@ import NavBar from "./components/NavBar";
 function App() {
 
 
+  const [userData, setUserData] = useState({id: null, name: null, mobile: null, email: null, role: null});
 const [isLogin, setIsLogin] = useState(false);
-const [userData, setUserData] = useState({id: null, name: null, mobile: null, email: null, role: null});
 
 const getNavs = (role) => {
   switch(role){
