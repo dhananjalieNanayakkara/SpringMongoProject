@@ -3,13 +3,13 @@ import {useEffect, useState } from "react";
 
 
 function Parient() {
-
-    const [patientid, setId] = useState('');
-  const [patientname, setName] = useState("");
-  const [address, setAddress] = useState("");
+  
   const [nicnumber, setNicnumber] = useState("");
   const [contactnumber, setContactNumber] = useState("");
   const [patients, setUsers] = useState([]);
+    const [patientid, setId] = useState('');
+  const [patientname, setName] = useState("");
+  const [address, setAddress] = useState("");
 
 
  //load the data using useEffect
@@ -26,8 +26,6 @@ function Parient() {
          console.log(result.data);
   }
  
-
-  
      async function save(event)
     {
         event.preventDefault();
